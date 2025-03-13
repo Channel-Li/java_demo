@@ -7,11 +7,25 @@ public class Main {
         System.out.printf("Hello and welcome!");
 
         // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
-
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        int tmp1 = 1;
+        int tmp2 = 2;
+        int tmp3 = Math.max(tmp1,tmp2);
+        System.out.println(tmp3);
+        int tmp4 = add_5(1,2,3,4,5);
+        System.out.println(tmp4);
     }
+
+    /**
+     *
+     * @param a
+     * @param b
+     * @param c
+     * @param d
+     * @param e
+     * @return
+     */
+    public static int add_5(int a, int b,int c,int d,int e){
+        return a+b+c+d+e;
+    }
+
 }
